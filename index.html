@@ -125,7 +125,7 @@
 
 <script>
 // Each match can only be unlocked with that person's own 2-digit code.
-const LOCK = {"Shamini":{"h":"ba047153","r":"X+2HMg=="},"Janey":{"h":"fa38b720","r":"kA6Q410="},"John":{"h":"d7753e16","r":"0kQQaoU="},"Punitha":{"h":"82918255","r":"Moj0Z9s="},"Afiah":{"h":"3ce2846b","r":"pQekHORz5g=="},"Henry":{"h":"c003400","r":"H5dRqsI="},"Luhao":{"h":"a670207a","r":"7Sj5Q2PvhR8="},"Bernard":{"h":"d29f2777","r":"w5HPeFLN"},"Pek Mee":{"h":"12492584","r":"QPZdq6U/"},"Syahirah":{"h":"34b7cda4","r":"rPpM3MQrtw=="},"Ahmad":{"h":"8cba529e","r":"LGQ6tds/8A=="},"Niza":{"h":"2519a40f","r":"nFSUD+qewA=="},"Lionel":{"h":"8132cb09","r":"G6tV/Q=="},"Debbie":{"h":"181f7317","r":"7XWjXyI="}};
+const LOCK = {"Shamini":{"h":"ba047153","r":"X+2HMg=="},"Janey":{"h":"fa38b720","r":"kA6Q410="},"John":{"h":"d7753e16","r":"0kQQaoU="},"Punitha":{"h":"82918255","r":"Moj0Z9s="},"Afiah":{"h":"3ce2846b","r":"sQetXsBz"},"Henry":{"h":"c003400","r":"H5dRqsI="},"Luhao":{"h":"a670207a","r":"7Sj5Q2PvhR8="},"Bernard":{"h":"d29f2777","r":"15HGOnbNBA=="},"Pek Mee":{"h":"12492584","r":"QPZdq6U/"},"Syahirah":{"h":"34b7cda4","r":"rPpM3MQrtw=="},"Ahmad":{"h":"8cba529e","r":"LGQ6tds/8A=="},"Niza":{"h":"2519a40f","r":"nFSUD+qewA=="},"Lionel":{"h":"8132cb09","r":"G6tV/Q=="},"Debbie":{"h":"181f7317","r":"7XWjXyI="}};
 const NAMES = ["Shamini","Janey","John","Punitha","Afiah","Henry","Luhao","Bernard","Pek Mee","Syahirah","Ahmad","Niza","Lionel","Debbie"];
 function fnv(s){let h=0x811c9dc5;for(const c of s){h^=c.charCodeAt(0);h=Math.imul(h,16777619)>>>0;}return h;}
 function unlock(g,c){const L=LOCK[g]; if(!L||fnv(g+'|'+c+'|ss').toString(16)!==L.h) return null;
